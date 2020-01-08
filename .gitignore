@@ -1,0 +1,7 @@
+# WinSeFS ignore
+setup/
+wsfs.json
+!prompts
+
+# Workspace specific
+.vscode
