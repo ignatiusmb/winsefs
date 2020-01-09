@@ -1,6 +1,6 @@
 <h1 align=center>Windows Setup Files Sync (WinSeFS)</h1>
 <p align=center>
-Your personal settings, config files, and registry manager all in one place, fully synchronized across the cloud. Restore your PC configuration in seconds!
+Your personal settings, config files, and registry manager all in one place, fully synchronized across the cloud.<br>Restore your PC configuration in seconds!
 </p>
 <blockquote align=center>Unix-like dotfiles for Windows</blockquote>
 
