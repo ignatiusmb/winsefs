@@ -1,0 +1,10 @@
+{
+  "dirs": [
+    ".ssh"
+  ],
+  "files": [
+    ".bash_history",
+    ".condarc",
+    ".npmrc"
+  ]
+}
