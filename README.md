@@ -6,7 +6,7 @@ Your personal settings, config files, and registry manager all in one place, ful
 
 ## Download the executable
 
-- [`Winsefs v1.0.0`](releases/download/v1.0.0/winsefs-v1.0.0.exe) - Initial Release [20.01.09](releases/tag/v1.0.0)
+- [`Winsefs v1.0.0`](https://github.com/ignatiusmb/winsefs/releases/download/v1.0.0/winsefs-v1.0.0.exe) - [20.01.09](https://github.com/ignatiusmb/winsefs/releases/tag/v1.0.0) Initial Release
 
 ### Usage - with executable
 
