@@ -26,7 +26,7 @@ Your personal settings, config files, and registry manager all in one place, ful
 ---
 
 <h3 align=center>
-    WinSeFS is <a href=LICENSE>MIT Licensed</a>
+    <pre>WinSeFS | <a href=LICENSE>MIT Licensed</a></pre>
 </h3>
 
 ---
