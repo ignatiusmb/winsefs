@@ -6,13 +6,13 @@ Your personal settings, config files, and registry manager all in one place, ful
 
 ## Download the executable
 
-- [`Winsefs v0.2.1`](releases/download/v0.2.1/winsefs-v0.2.1.exe) - Initial Release [20.01.09](releases/tag/v0.2.1)
+- [`Winsefs v1.0.0`](releases/download/v1.0.0/winsefs-v1.0.0.exe) - Initial Release [20.01.09](releases/tag/v1.0.0)
 
 ### Usage - with executable
 
 1. Create a folder inside one of your preferred Cloud Storage (e.g. Google Drive, OneDrive, iCloud, etc.)
 2. Move the executable inside the created folder
-3. Download [wsfs.json.sample](wsfs.json.sample) and rename it to `wsfs.json`
+3. Download [`wsfs.json.sample`](wsfs.json.sample) and rename it to `wsfs.json`
 4. Add or delete entries in `wsfs.json` with your `config files/directories`
 5. Double-click/run the executable
 
@@ -22,6 +22,12 @@ Your personal settings, config files, and registry manager all in one place, ful
 2. Execute `setup.cmd` to copy `wsfs.json.sample`
 3. Add or delete entries in `wsfs.json` with your `config files/directories`
 4. Run/execute `python link.py` in the folder command prompt
+
+### Distributing
+
+```bash
+pyinstaller link.py -F -n winsefs-v<major>.<minor>.<patch>
+```
 
 ---
 
