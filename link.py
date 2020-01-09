@@ -1,6 +1,5 @@
 import json
 import subprocess
-from filecmp import cmp
 from os.path import isdir, islink
 from pathlib import Path
 from shutil import rmtree
@@ -28,7 +27,7 @@ class WSFS:
 
     def clone(src: Path, dst: Path):
         print(f"Cloning {src} to {dst}")
-        args = ["xcopy","/g"]
+        args = ["xcopy", "/g"]
         if isdir(src):
             args.append("/i")
         args.append(str(src))
@@ -53,9 +52,9 @@ def process(name: str, src: Path, dst: Path) -> bool:
     if src.exists():
         if islink(dst):
             if WSFS.validate(src, dst):
-                print(f"{f} is already linked!")
+                print(f"{name} is already linked!")
                 return True
-            print(f"Symlink corrupted, renewing {f}")
+            print(f"Symlink corrupted, renewing {name}")
             WSFS.symlink(src, dst)
         elif dst.exists():
             print(f"{HOMEDIR} already has {name}, comparing with {src}")
@@ -66,7 +65,7 @@ def process(name: str, src: Path, dst: Path) -> bool:
         WSFS.symlink(src, dst)
         return True
     else:
-        print(f"There's no {f} in {SOURCE} or {HOMEDIR}.")
+        print(f"There's no {name} in {SOURCE} or {HOMEDIR}.")
         return False
 
 
@@ -93,3 +92,5 @@ with open("wsfs.json") as load:
     total = len(data["files"]) + len(data["dirs"]) - empty
     print(f"\n# Finished processing | {count} of {total} successful links")
     print(f"> Skipped links ({empty}): {skipped if skipped else None}")
+
+input("Enter any key to exit...")
