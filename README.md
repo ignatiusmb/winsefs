@@ -22,3 +22,17 @@ Your personal settings, config files, and registry manager all in one place, ful
 2. Execute `setup.cmd` to copy `wsfs.json.sample`
 3. Add or delete entries in `wsfs.json` with your `config files/directories`
 4. Run/execute `python link.py` in the folder command prompt
+
+---
+
+<h3 align=center>
+    WinSeFS is <a href=LICENSE>MIT Licensed</a>
+</h3>
+
+---
+
+<p align=center>
+    <a href=https://ignatiusmb.github.io><code>Portfolio</code></a>
+    &bull;
+    <a href=https://imbagus.com><code>imbagus.com</code></a>
+</p>
