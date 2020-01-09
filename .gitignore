@@ -3,5 +3,13 @@ setup/
 wsfs.json
 !prompts
 
+# Distribution specific
+build/
+dist/
+*.spec
+
+# Python specific
+__pycache__
+
 # Workspace specific
 .vscode
