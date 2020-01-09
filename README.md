@@ -26,13 +26,13 @@ Your personal settings, config files, and registry manager all in one place, ful
 ---
 
 <h3 align=center>
-    <pre>WinSeFS | <a href=LICENSE>MIT Licensed</a></pre>
+    <pre>WinSeFS | <a href=LICENSE>MIT License</a></pre>
 </h3>
 
 ---
 
 <p align=center>
-    <a href=https://ignatiusmb.github.io><code>Portfolio</code></a>
+    <a href=https://ignatiusmb.github.io>Portfolio</a>
     &bull;
-    <a href=https://imbagus.com><code>imbagus.com</code></a>
+    <a href=https://imbagus.com>imbagus.com</a>
 </p>
