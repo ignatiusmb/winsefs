@@ -1,19 +1,24 @@
 <h1 align=center>Windows Setup Files Sync (WinSeFS)</h1>
+<p align=center>
+Your personal settings, config files, and registry manager all in one place, fully synchronized across the cloud. Restore your PC configuration in seconds!
+</p>
+<blockquote align=center>Unix-like dotfiles for Windows</blockquote>
 
-Your personal settings, config files, and registry manager all in one place, fully synchronized across the cloud.
+## Download the executable
 
-> Unix-like dotfiles for Windows
+- [`Winsefs v0.2.1`](releases/download/v0.2.1/winsefs-v0.2.1.exe) - Initial Release [20.01.09](releases/tag/v0.2.1)
 
-**DISCLAIMER!** Make sure you commit to a **private repository** if you're going to save your private keys and/or credentials. In no event shall the authors be held responsible for any disclosure.
+### Usage - with executable
 
-e.g. *ssh* and *gpg keys*, *.gitconfig*, any *password*, etc.
+1. Create a folder inside one of your preferred Cloud Storage (e.g. Google Drive, OneDrive, iCloud, etc.)
+2. Move the executable inside the created folder
+3. Download [wsfs.json.sample](wsfs.json.sample) and rename it to `wsfs.json`
+4. Add or delete entries in `wsfs.json` with your `config files/directories`
+5. Double-click/run the executable
 
-## Prerequisites
+### Usage - with source code
 
-- *This guide assumes you have python3 installed*
-
-## Usage
-
-1. Execute `setup.cmd` to copy `wsfs.json.sample`
-2. Add or delete entries in `<name>.wsfs` with your `config files/directories`
-3. Run `python link.py` to connect files/directories using symbolic links
+1. Clone this repository inside one of your preferred Cloud Storage
+2. Execute `setup.cmd` to copy `wsfs.json.sample`
+3. Add or delete entries in `wsfs.json` with your `config files/directories`
+4. Run/execute `python link.py` in the folder command prompt
