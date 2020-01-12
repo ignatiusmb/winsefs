@@ -4,6 +4,8 @@ from os.path import isdir, islink
 from pathlib import Path
 from shutil import rmtree
 
+VERSION = "1.0.2"
+
 SOURCE = Path.cwd().joinpath("setup")  # setup folder in winsefs as source
 HOMEDIR = Path.home()
 
@@ -67,7 +69,7 @@ def process(name: str, src: Path, dst: Path) -> bool:
         return False
 
 
-print("Windows Setup Files Sync [Version 1.0.2]")
+print(f"Windows Setup Files Sync [Version {VERSION}]")
 with open("wsfs.json") as load:
     skipped = []
     count = empty = 0
@@ -92,4 +94,5 @@ with open("wsfs.json") as load:
     print(f"\n# Finished processing | {count} of {total} successful links")
     print(f"> Skipped links ({empty}): {skipped if skipped else None}")
 
-input("\nThank you for using WinSeFS! Enter any key to exit...")
+print(f"\nWinSeFS v{VERSION} | https://github.com/ignatiusmb/winsefs")
+input("Thank you for using WinSeFS! Press Enter to exit...")
