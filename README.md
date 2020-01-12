@@ -6,7 +6,8 @@ Your personal settings, config files, and registry manager all in one place, ful
 
 ## Download the executable
 
-- [`Winsefs v1.0.0`](https://github.com/ignatiusmb/winsefs/releases/download/v1.0.0/winsefs-v1.0.0.exe) - [20.01.09](https://github.com/ignatiusmb/winsefs/releases/tag/v1.0.0) Initial Release
+- [`v1.0.2`](https://github.com/ignatiusmb/winsefs/releases/download/v1.0.2/winsefs-v1.0.2.exe) - [20.01.12](https://github.com/ignatiusmb/winsefs/releases/tag/v1.0.2) Fix prompt when copying files
+- [`v1.0.0`](https://github.com/ignatiusmb/winsefs/releases/download/v1.0.0/winsefs-v1.0.0.exe) - [20.01.09](https://github.com/ignatiusmb/winsefs/releases/tag/v1.0.0) Initial Release
 
 ### Usage - with executable
 
@@ -15,15 +16,21 @@ Your personal settings, config files, and registry manager all in one place, ful
 3. Download [`wsfs.json.sample`](wsfs.json.sample) and rename it to `wsfs.json`
 4. Add or delete entries in `wsfs.json` with your `config files/directories`
 5. Double-click/run the executable
+6. A New `setup` folder will be created, this folder consists all of your files from the entries you provided in `wsfs.json`
 
 ### Usage - with source code
 
-1. Clone this repository inside one of your preferred Cloud Storage
-2. Execute `setup.cmd` to copy `wsfs.json.sample`
-3. Add or delete entries in `wsfs.json` with your `config files/directories`
-4. Run/execute `python link.py` in the folder command prompt
+1. Fork this repository
+2. Clone it inside one of your preferred Cloud Storage
+3. Execute `setup.cmd` to copy `wsfs.json.sample`
+4. Add or delete entries in `wsfs.json` with your `config files/directories`
+5. Run/execute `python link.py` in the folder command prompt
+6. A New `setup` folder will be created, this folder consists all of your files from the entries you provided in `wsfs.json`
+7. Make sure to not remove `setup` from `.gitignore` if you're pushing to a public repository
 
 ### Distributing
+
+The executable is created with `pyinstaller` with the command below, you can try compiling from the source code yourself and compare it with the distributed executable
 
 ```bash
 pyinstaller link.py -F -n winsefs-v<major>.<minor>.<patch>
