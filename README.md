@@ -32,8 +32,11 @@ Your personal settings, config files, and registry manager all in one place, ful
 
 The executable is created with `pyinstaller` with the command below, you can try compiling from the source code yourself and compare it with the distributed executable
 
-```bash
-pyinstaller link.py -F -n winsefs-v<major>.<minor>.<patch>
+```sh
+# you don't need this to develop, but you do need it to distribute it
+# use the command: pip install pyinstaller
+
+pyinstaller link.py --specpath build/specfiles --onefile --name winsefs-v<major>.<minor>.<patch>
 ```
 
 ---
