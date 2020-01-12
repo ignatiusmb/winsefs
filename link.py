@@ -27,9 +27,7 @@ class WSFS:
 
     def clone(src: Path, dst: Path):
         print(f"Cloning {src} to {dst}")
-        args = ["xcopy", "/g"]
-        if isdir(src):
-            args.append("/i")
+        args = ["xcopy", "/g", "/i", "/k"] if isdir(src) else ["copy"]
         args.append(str(src))
         args.append(str(dst))
         subprocess.run(args, shell=True)
@@ -69,6 +67,7 @@ def process(name: str, src: Path, dst: Path) -> bool:
         return False
 
 
+print("Windows Setup Files Sync [Version 1.0.2]")
 with open("wsfs.json") as load:
     skipped = []
     count = empty = 0
@@ -93,4 +92,4 @@ with open("wsfs.json") as load:
     print(f"\n# Finished processing | {count} of {total} successful links")
     print(f"> Skipped links ({empty}): {skipped if skipped else None}")
 
-input("Enter any key to exit...")
+input("\nThank you for using WinSeFS! Enter any key to exit...")
